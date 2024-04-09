@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/test
+    username: postgres
+    password: veref2004
+
+  liquibase:
+    change-log: db/changelog/main-changelog.xml
+
+hibernate:
+  show_sql: true
+  hbm2ddl:
+      auto: none
+
+garage:
+  maxCars: 2
+
+server:
+  port: 8082
